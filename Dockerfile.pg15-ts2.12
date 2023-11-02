@@ -17,3 +17,5 @@ RUN chmod +x /docker-entrypoint-initdb.d/init-ssl.sh
 
 # Switch back to the postgres
 USER postgres
+
+CMD ["postgres", "--port=5432"]
