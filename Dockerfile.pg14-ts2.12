@@ -20,5 +20,8 @@ RUN chmod +x /docker-entrypoint-initdb.d/init-ssl.sh
 # Switch back to the postgres
 USER postgres
 
+# set PGHOST
+ENV PGHOST=localhost
+
 # ENTRYPOINT ["wrapper.sh"]
 CMD ["postgres", "--port=5432"]
