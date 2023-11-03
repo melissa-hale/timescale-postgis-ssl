@@ -5,6 +5,9 @@ ls -ld /var/lib/postgresql/data
 
 SSL_DIR="/var/lib/postgresql/data/certs"
 
+echo "The value of PGHOST is: $PGHOST"
+echo "The value of PGPORT is: $PGPORT"
+
 # Use sudo to create the directory as root
 sudo mkdir -p "$SSL_DIR"
 
