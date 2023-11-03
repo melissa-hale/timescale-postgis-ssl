@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# set the PGHOST to localhost
+# unset PGHOST to force psql to use Unix socket path
 # this is specific to Railway and allows
 # us to use PGHOST after the init
-export PGHOST="127.0.0.1"
-export PGPORT=5432
+unset PGHOST
+# export PGPORT=5432
 
 # Call the entrypoint script with the
 # approriate PGHOST
